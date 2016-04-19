@@ -2,3 +2,8 @@
     background-color:black;
     color: white;
 }
+
+#makeBackgroundFullScreen{
+    background-color:transparent;
+    margin-top:100%;
+}
