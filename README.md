@@ -1,4 +1,4 @@
-# Incendium 2.0
+# Incendium
 
 Developed and Coded by Sparticle999
 
