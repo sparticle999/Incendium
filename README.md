@@ -8,7 +8,7 @@ Developed and Coded by Sparticle999
 
 A small project for fun - my second attempt at an incremental game, succeeding my previous try.
 
-[Minergy 1]((http://sparticle999.github.io/Minergy/)
+[Minergy 1](http://sparticle999.github.io/Minergy/)
 
 Suggestions and pull requests greatly appreciated
 
