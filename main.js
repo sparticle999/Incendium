@@ -6,15 +6,15 @@ function buyShop() {
         var loanChoice2 = prompt("Great! And When Would You Like To Pay Off The Loan? ASAP or Never?");
         if(loanChoice2 === "ASAP"){
             alert("OK Then! Let's Get Started!");
-            exit()
+            exit();
         }
         if(loanChoice2 === "Never"){
             alert("ERROR! You Must Upgrade Your Decision Making Skills Before You Can Do This!");
-            exit()
+            exit();
         }
         else{
             alert("That Was Not An Option! Please Try Again!");
-            exit()
+            exit();
         }
     }
     if(loanChoice === "50000"){
