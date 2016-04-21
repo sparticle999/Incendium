@@ -6,6 +6,7 @@ function buyShop() {
         var loanChoice2 = prompt("Great! And When Would You Like To Pay Off The Loan? ASAP or Never?");
         if(loanChoice2 === "ASAP"){
             alert("OK Then! Let's Get Started!");
+            document.getElementById("buyShop").className += " hidden";
             return;
         }
         if(loanChoice2 === "Never"){
