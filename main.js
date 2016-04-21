@@ -1,4 +1,5 @@
 var money = 0;
+var loanChoice = 0; var loanChoice2 = 0;
 
 function buyShop() {
     var loanChoice = prompt("Oh! It Does Not Look Like You Have Any Money! Here, I'll give you a loan! Is 1000 okay, or would you like 50000?");
