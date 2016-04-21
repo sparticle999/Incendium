@@ -1,9 +1,14 @@
 var money = 0;
 
 function buyShop() {
-  var choice = prompt("Oh! It Does Not Look Like You Have Any Money! Here, I'll give you a loan! Is 1000 okay? Answer Yes/No");
-  if(choice === Yes || yes){
-    alert("And When Would You Like To Pay Off The Loan? ASAP or Never?")
-  }
-  
+    var loanChoice = prompt("Oh! It Does Not Look Like You Have Any Money! Here, I'll give you a loan! Is 1000 okay, or would you like 50000?");
+    if(loanChoice === 1000){
+        var loadChoice2 = prompt("Great! And When Would You Like To Pay Off The Loan? ASAP or Never?");
+    }
+    if(loanChoice === 50000){
+        alert("ERROR! You Must Upgrade Your Decision Making Skills Before You Can Do This!");
+    }
+    else{
+        alert("That Was Not An Option! Please Try Again!");
+    }
 }
