@@ -7,6 +7,7 @@ function buyShop() {
         if(loanChoice2 === "ASAP"){
             alert("OK Then! Let's Get Started!");
             document.getElementById("buyShop").className += " hidden";
+            document.getElementById("background").className = "whiteBackground";
             return;
         }
         if(loanChoice2 === "Never"){
