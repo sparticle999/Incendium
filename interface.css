@@ -1,5 +1,4 @@
 #background {
-    background-color:black;
     height: 100%;
     width: 100%;
 }
@@ -20,4 +19,8 @@
 
 .whiteBackground{
     background-color:white;
+}
+
+.blackBackground{
+    background-color:black;
 }
