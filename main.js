@@ -61,7 +61,7 @@ function decisionUpgrade(){
             decisionCost = 1000;
         }
         decisionLevel += 1;
-        document.getElementById("money").innerHTML = money;
+        document.getElementById("moneyNum").innerHTML = money;
         document.getElementById("decisionCost").innerHTML = decisionCost;
     }
 }
