@@ -40,7 +40,7 @@ function buyShop() {
 function getFire(number){
     fire += number;
     document.getElementById("fireAspectNum").innerHTML = fire;
-    if(fire > 10){
+    if(fire >= 10){
     document.getElementById("decisionUpgrade").className = "";
 }
 }
