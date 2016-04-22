@@ -33,6 +33,6 @@ function buyShop() {
 
 function getFire(number){
     fire += number;
-    document.getElementById("fireAspect").innerHTML = fire;
+    document.getElementById("fireAspectNum").innerHTML = fire;
 }
     
