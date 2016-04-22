@@ -1,6 +1,8 @@
 var money = 0;
 var fire = 0;
 var firePrice = 0.5;
+var decisionLevel = 0;
+var decisionCost = 10;
 
 function buyShop() {
     var loanChoice = prompt("Oh! It Does Not Look Like You Have Any Money! Here, I'll give you a loan! Is 1000 okay, or would you like 50000?");
@@ -44,4 +46,19 @@ function sellFire(){
     document.getElementById("fireAspectNum").innerHTML = fire;
     document.getElementById("moneyNum").innerHTML = money;
 }
-    
+
+function decisionUpgrade(){
+    if(money > decisionCost){
+        money -= decisionCost;
+        if(decisionLevel === 0){
+            decisionCost = 100;
+            document.getElementById("upgradeFirePrice").className = "";
+        }
+        if(decisionLevel === 1){
+            decisionCost = 1000;
+        }
+        decisionLevel += 1;
+        document.getElementById("money").innerHTML = money;
+        document.getElementById("decisionCost").innerHTML = decisionCost;
+    }
+}
