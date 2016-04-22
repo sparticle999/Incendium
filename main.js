@@ -69,7 +69,7 @@ function decisionUpgrade(){
     }
 }
 
-function upgradeFirePrice{
+function upgradeFirePrice(){
     if(money > upgradeFirePriceCost){
         money -= upgradeFirePriceCost;
         upgradeFirePriceCost *= 2;
