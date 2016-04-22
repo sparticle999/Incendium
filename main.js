@@ -39,8 +39,12 @@ function getFire(number){
 }
 
 function sellFire(){
-    money += fire * firePrice;
-    document.getElementById("moneyNum").innerHTML = money;
+    var fireNum = fire;
+    for (a = 0; a < fireNum; a++){
+		fire -= 1;
+		money += firePrice;
+	}
+	document.getElementById("moneyNum").innerHTML = money;
     fire = 0;
 }
     
