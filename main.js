@@ -3,6 +3,8 @@ var fire = 0;
 var firePrice = 0.5;
 var decisionLevel = 0;
 var decisionCost = 10;
+var upgradeFirePriceCost = 20;
+var firePerClick = 1;
 
 function buyShop() {
     var loanChoice = prompt("Oh! It Does Not Look Like You Have Any Money! Here, I'll give you a loan! Is 1000 okay, or would you like 50000?");
@@ -54,6 +56,7 @@ function decisionUpgrade(){
     if(money > decisionCost){
         money -= decisionCost;
         if(decisionLevel === 0){
+            alert("0.5 sounds like far too little for a mighty fire aspect! Why don't we upgrade the price!");
             decisionCost = 100;
             document.getElementById("upgradeFirePrice").className = "";
         }
@@ -63,5 +66,16 @@ function decisionUpgrade(){
         decisionLevel += 1;
         document.getElementById("moneyNum").innerHTML = money;
         document.getElementById("decisionCost").innerHTML = decisionCost;
+    }
+}
+
+function upgradeFirePrice{
+    if(money > upgradeFirePriceCost){
+        money -= upgradeFirePriceCost;
+        upgradeFirePriceCost *= 2;
+        firePerClick *= 2;
+        document.getElementById("money").innerHTML = money;
+        document.getElementById("upgradeFirePriceCost").innerHTML = upgradeFirePriceCost;
+        document.getElementById("firePerClick").innerHTML = firePerClick;
     }
 }
