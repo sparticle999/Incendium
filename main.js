@@ -62,3 +62,7 @@ function decisionUpgrade(){
         document.getElementById("decisionCost").innerHTML = decisionCost;
     }
 }
+
+while(fire > 10){
+    document.getElementById("decisionUpgrade").className = "";
+}
