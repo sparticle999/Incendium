@@ -8,6 +8,7 @@ function buyShop() {
             alert("OK Then! Let's Get Started!");
             document.getElementById("buyShop").className += " hidden";
             document.getElementById("background").className = "whiteBackground";
+            document.getElementById("getFire").className = "";
             return;
         }
         if(loanChoice2 === "Never"){
