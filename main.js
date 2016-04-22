@@ -1,4 +1,5 @@
 var money = 0;
+var fire = 0;
 
 function buyShop() {
     var loanChoice = prompt("Oh! It Does Not Look Like You Have Any Money! Here, I'll give you a loan! Is 1000 okay, or would you like 50000?");
@@ -29,3 +30,9 @@ function buyShop() {
         alert("That Was Not An Option! Please Try Again!");
     }
 }
+
+function getFire(number){
+    fire += number;
+    document.getElementById("fireAspect").innerHTML = fire;
+}
+    
