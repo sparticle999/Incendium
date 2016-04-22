@@ -9,6 +9,8 @@ function buyShop() {
             document.getElementById("buyShop").className += " hidden";
             document.getElementById("background").className = "whiteBackground";
             document.getElementById("getFire").className = "";
+            document.getElementById("money").className = "";
+            document.getElementById("fireAspect").className = "";
             return;
         }
         if(loanChoice2 === "Never"){
