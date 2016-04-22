@@ -1,6 +1,6 @@
 var money = 0;
 var fire = 0;
-var firePrice = 0;
+var firePrice = 0.5;
 
 function buyShop() {
     var loanChoice = prompt("Oh! It Does Not Look Like You Have Any Money! Here, I'll give you a loan! Is 1000 okay, or would you like 50000?");
@@ -39,12 +39,9 @@ function getFire(number){
 }
 
 function sellFire(){
-    var fireNum = fire;
-    for (a = 0; a < fireNum; a++){
-		fire -= 1;
-		money += firePrice;
-	}
-	document.getElementById("moneyNum").innerHTML = money;
-    fire = 0;
+    money += fire * firePrice;
+    fire = 0
+    document.getElementById("fireAspectNum").innerHTML = fire;
+    document.getElementById("moneyNum").innerHTML = money;
 }
     
