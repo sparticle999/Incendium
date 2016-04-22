@@ -1,5 +1,6 @@
 var money = 0;
 var fire = 0;
+var firePrice = 0;
 
 function buyShop() {
     var loanChoice = prompt("Oh! It Does Not Look Like You Have Any Money! Here, I'll give you a loan! Is 1000 okay, or would you like 50000?");
@@ -12,6 +13,7 @@ function buyShop() {
             document.getElementById("getFire").className = "";
             document.getElementById("money").className = "";
             document.getElementById("fireAspect").className = "";
+            document.getElementById("sellFire").className = "";
             return;
         }
         if(loanChoice2 === "Never"){
@@ -34,5 +36,11 @@ function buyShop() {
 function getFire(number){
     fire += number;
     document.getElementById("fireAspectNum").innerHTML = fire;
+}
+
+function sellFire(){
+    money += fire * firePrice;
+    document.getElementById("moneyNum").innerHTML = money;
+    fire = 0;
 }
     
