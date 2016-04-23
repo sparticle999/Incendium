@@ -51,7 +51,7 @@ function sellFire(){
 }
 
 function decisionUpgrade(){
-    if(money > decisionCost){
+    if(money >= decisionCost){
         money -= decisionCost;
         if(decisionLevel === 0){
             alert("0.5 sounds like far too little for a mighty fire aspect! Why don't we upgrade the price!");
@@ -68,7 +68,7 @@ function decisionUpgrade(){
 }
 
 function upgradeFirePrice(){
-    if(money > upgradeFirePriceCost){
+    if(money >= upgradeFirePriceCost){
         money -= upgradeFirePriceCost;
         upgradeFirePriceCost *= 2;
         firePrice *= 2;
