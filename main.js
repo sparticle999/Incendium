@@ -72,7 +72,7 @@ function upgradeFirePrice(){
         money -= upgradeFirePriceCost;
         upgradeFirePriceCost *= 2;
         firePrice *= 2;
-        document.getElementById("money").innerHTML = money;
+        document.getElementById("moneyNum").innerHTML = money;
         document.getElementById("upgradeFirePriceCost").innerHTML = upgradeFirePriceCost;
         document.getElementById("firePrice").innerHTML = firePerClick;
     }
