@@ -18,6 +18,7 @@ function buyShop() {
             document.getElementById("money").className = "";
             document.getElementById("fireAspect").className = "";
             document.getElementById("sellFire").className = "";
+            document.getElementById("decisionUpgrade").className = "";
             return;
         }
         if(loanChoice2 === "Never"){
@@ -40,9 +41,6 @@ function buyShop() {
 function getFire(number){
     fire += number;
     document.getElementById("fireAspectNum").innerHTML = fire;
-    if(fire >= 10){
-    document.getElementById("decisionUpgrade").className = "";
-}
 }
 
 function sellFire(){
@@ -73,9 +71,9 @@ function upgradeFirePrice(){
     if(money > upgradeFirePriceCost){
         money -= upgradeFirePriceCost;
         upgradeFirePriceCost *= 2;
-        firePerClick *= 2;
+        firePrice *= 2;
         document.getElementById("money").innerHTML = money;
         document.getElementById("upgradeFirePriceCost").innerHTML = upgradeFirePriceCost;
-        document.getElementById("firePerClick").innerHTML = firePerClick;
+        document.getElementById("firePrice").innerHTML = firePerClick;
     }
 }
