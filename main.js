@@ -54,12 +54,14 @@ function decisionUpgrade(){
     if(money >= decisionCost){
         money -= decisionCost;
         if(decisionLevel === 0){
-            alert("0.5 sounds like far too little for a mighty fire aspect! Why don't we upgrade the price!");
+            alert("0.5 Sounds Like Far Too Little Profit For A Mighty Fire Aspect! Why Don't We Upgrade The Price!");
             decisionCost = 100;
             document.getElementById("upgradeFirePrice").className = "";
         }
         if(decisionLevel === 1){
+            alert("Hmm... I Think You Should Start To Improve Your Efficiency Of Getting Fire Aspects.");
             decisionCost = 1000;
+            document.getElementById("upgradeFirePerClick").className = "";
         }
         decisionLevel += 1;
         document.getElementById("moneyNum").innerHTML = money;
@@ -74,6 +76,6 @@ function upgradeFirePrice(){
         firePrice *= 2;
         document.getElementById("moneyNum").innerHTML = money;
         document.getElementById("upgradeFirePriceCost").innerHTML = upgradeFirePriceCost;
-        document.getElementById("firePrice").innerHTML = firePerClick;
+        document.getElementById("firePrice").innerHTML = firePrice;
     }
 }
