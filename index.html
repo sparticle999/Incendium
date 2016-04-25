@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="interface.css" />
+	<title>Incendium</title>
+	<link rel="shortcut icon" type="image/png" href=""/>
+</head>
+<body>
+	<div id="background" class="blackBackground">
+		<br />
+		<button id="getFire" onclick="getFire(1)" class="hidden">Click To Get <span id="firePerClick">1</span> Fire Aspects!</button>
+		<br />
+		<span id="fireAspect"class="hidden">Fire Aspects: <span id="fireAspectNum">0</span></span>
+		<br />
+		<button id="sellFire" onclick="sellFire()" class="hidden">Click To Sell Your Fire Aspects! Sell Value: <span id="firePrice">0.5</span></button>
+		<br />
+		<span id="money" class="hidden">Money: <span id="moneyNum">0</span></span>
+		<br />
+		<button onclick="buyShop()" id="buyShop" class="btn-deafult">Click To Buy Shop. Cost: 1000 Money</button>
+		<br />
+		<button onclick="decisionUpgrade()" id="decisionUpgrade" class="hidden">Click To Upgrade Your Decision Making Skills! Cost: <span id="decisionCost">10</span></button>
+		<br />
+		<button onclick="upgradeFirePrice()" id="upgradeFirePrice" class="hidden">Click To Increase Fire Aspect Value! Cost: <span id="upgradeFirePriceCost">20</span></button>
+		<br />
+		<button onclick="upgradeFirePerClick()" id="upgradeFirePerClick" class="hidden">Click To Improve How Many Fire Aspects You Get Per Click! Cost: <span id="upgradeFirePerClickCost">100</span></button>
+		<br />
+		<button onclick="upgradeButtonAPI()" id="upgradeButtonAPI" class="hidden">Click To Improve The Button Graphics! Cost: 200</button>
+		<br />
+		<button onclick="upgradeButtonAPI2()" id="upgradeButtonAPI2" class="hidden">Click To Further Improve The Button Graphics! Cost: 1000</button>
+		<br />
+		<div id="makeBackgroundFullScreen"></div>
+	</div>
+
+    	<script type="text/javascript" src="main.js"></script>
+</body>
+
+<!--
+
+To Do List:

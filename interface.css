@@ -1,0 +1,26 @@
+#background {
+    height: 100%;
+    width: 100%;
+}
+
+#makeBackgroundFullScreen{
+    background-color:black;
+    margin-top:100%;
+}
+
+#buyShop{
+    margin-left:50%;
+    margin-right:50%;
+}
+
+.whiteText{
+    color:white;
+}
+
+.whiteBackground{
+    background-color:white;
+}
+
+.blackBackground{
+    background-color:black;
+}
