@@ -122,6 +122,7 @@ function upgradeButtonAPI(){
         colour = "true";
         addColour();
         refreshMoney();
+        document.getElementById(upgradeButtonAPI).className = "hidden";
     }
 }
 
