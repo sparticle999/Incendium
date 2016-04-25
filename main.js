@@ -122,10 +122,11 @@ function upgradeButtonAPI(){
         colour = "true";
         addColour();
         refreshMoney();
-        document.getElementById(upgradeButtonAPI).className = "hidden";
+        document.getElementById("upgradeButtonAPI").className = "hidden";
     }
 }
 
+//Makes the buttons specific colours.
 function addColour(){
     document.getElementById("getFire").className = "redBackground";
     document.getElementById("sellFire").className = "redBackground";
@@ -142,4 +143,14 @@ function addColour(){
     //document.getElementById("").className = ;
     //document.getElementById("").className = ;
     //document.getElementById("").className = ;
+}
+
+//WORK IN PROGRESS.
+function hireWizard(){
+    if(money >= wizardCost){
+        money -= wizardCost;
+        wizard += 1;
+        wizardCost = Math.floor(100 * Math.pow(1.1,wizard));
+        //NEED TO CALCULATE NEXT WIZARD COST.
+    }
 }
