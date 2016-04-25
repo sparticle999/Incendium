@@ -54,7 +54,7 @@ function getFire(){
 //Adds fire * firePrice to money, then takes away all fire.
 function sellFire(){
     money += fire * firePrice;
-    fire = 0
+    fire = 0;
     document.getElementById("fireAspectNum").innerHTML = fire;
     refreshMoney();
 }
