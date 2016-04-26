@@ -84,6 +84,7 @@ function decisionUpgrade(){
             decisionCost = 10000;
             document.getElementById("upgradeButtonAPI").className = "";
             document.getElementById("hireWizard").className = "";
+            document.getElementById("wizardNumBox").className = "";
         }
         decisionLevel += 1;
         refreshMoney();
@@ -135,8 +136,8 @@ function addColour(){
     document.getElementById("upgradeFirePrice").className = "blueBackground";
     document.getElementById("upgradeFirePerClick").className = "blueBackground";
     document.getElementById("upgradeButtonAPI2").className = "yellowBackground";
-    //document.getElementById("").className = ;
-    //document.getElementById("").className = ;
+    document.getElementById("hireWizard").className = "blueBackground";
+    document.getElementById("wizardNumBox").className = "blueColour";
     //document.getElementById("").className = ;
     //document.getElementById("").className = ;
     //document.getElementById("").className = ;
