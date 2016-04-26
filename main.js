@@ -9,6 +9,8 @@ var firePerClick = 1;
 var upgradeFirePerClickCost = 100;
 var colour = "false";
 var bootstrap = "false";
+var wizard = 0;
+var wizardCost = 500;
 
 // When Buy Shop button is pressed at start of the game, this triggers.
 function buyShop() {
