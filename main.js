@@ -154,7 +154,7 @@ function hireWizard(){
         money -= wizardCost;
         wizard += 1;
         wizardCost = Math.floor(500 * Math.pow(1.1,wizard));
-        refreshmoney();
+        refreshMoney();
         document.getElementById("wizardNum").innerHTML = wizard;
     }
     var nextWizardCost = Math.floor(500 * Math.pow(1.1,wizard));
