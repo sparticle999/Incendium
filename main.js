@@ -11,6 +11,7 @@ var colour = "false";
 var bootstrap = "false";
 var wizard = 0;
 var wizardCost = 500;
+var wizardGain = 1;
 
 // When Buy Shop button is pressed at start of the game, this triggers.
 function buyShop() {
@@ -160,3 +161,7 @@ function hireWizard(){
     var nextWizardCost = Math.floor(500 * Math.pow(1.1,wizard));
     document.getElementById("wizardCost").innerHTML = nextWizardCost;
 }
+
+window.setInterval(function(){
+    fire += wizardGain * wizard;
+}, 1000);
