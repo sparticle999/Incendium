@@ -156,5 +156,6 @@ function hireWizard(){
         wizardCost = Math.floor(100 * Math.pow(1.1,wizard));
         //NEED TO CALCULATE NEXT WIZARD COST.
         refreshmoney();
+        document.getElementById("wizardNum").innerHTML = wizard;
     }
 }
