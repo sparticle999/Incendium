@@ -153,9 +153,10 @@ function hireWizard(){
     if(money >= wizardCost){
         money -= wizardCost;
         wizard += 1;
-        wizardCost = Math.floor(100 * Math.pow(1.1,wizard));
-        //NEED TO CALCULATE NEXT WIZARD COST.
+        wizardCost = Math.floor(500 * Math.pow(1.1,wizard));
         refreshmoney();
         document.getElementById("wizardNum").innerHTML = wizard;
     }
+    var nextWizardCost = Math.floor(500 * Math.pow(1.1,wizard));
+    document.getElementById("wizardCost").innerHTML = nextWizardCost;
 }
