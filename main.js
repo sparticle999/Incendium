@@ -164,4 +164,5 @@ function hireWizard(){
 
 window.setInterval(function(){
     fire += wizardGain * wizard;
+    document.getElementById("fireAspectNum").innerHTML = fire;
 }, 1000);
