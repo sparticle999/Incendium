@@ -4,7 +4,7 @@ Developed and Coded by Sparticle999
 
 [Game link](http://sparticle999.github.io/Minergy2/)
 
-[Reddit Page]()(To Be Added)
+[Reddit Page]() (To Be Added)
 
 A small project for fun - my second attempt at an incremental game, succeeding my previous try:
 
@@ -18,7 +18,12 @@ Thanks for playing
 
 # To Do List
 
-- Make To Do List
+- Implement Water Vs Fire
+- Improve Graphics Options
+- Passive Generation Of Fire
+- Mana System
+- Training Soldiers
+- Random Events
 
 # Contributors
 - Loganator4625 (Gameplay Ideas)
