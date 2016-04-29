@@ -22,6 +22,7 @@ Thanks for playing
 - Improve Graphics Options
 - ~~Passive Generation Of Fire~~
 - Mana System
+- Mana Pool Cap i.e. 50/50
 - Training Soldiers
 - Random Events
 
