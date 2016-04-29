@@ -20,7 +20,7 @@ Thanks for playing
 
 - Implement Water Vs Fire
 - Improve Graphics Options
-- Passive Generation Of Fire
+- ~~Passive Generation Of Fire~~
 - Mana System
 - Training Soldiers
 - Random Events
