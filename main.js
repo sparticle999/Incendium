@@ -158,19 +158,22 @@ function addColour(){
     //document.getElementById("").className = ;
 }
 
-//WORK IN PROGRESS.
+//Deducts cost from money, then adds 1 to wizard count.
 function hireWizard(){
     if(money >= wizardCost){
         money -= wizardCost;
         wizard += 1;
+        //Calculates Cost based on power system
         wizardCost = Math.floor(500 * Math.pow(1.1,wizard));
         refreshMoney();
         document.getElementById("wizardNum").innerHTML = wizard;
     }
+    //Calculates next cost to display on the screen.
     var nextWizardCost = Math.floor(500 * Math.pow(1.1,wizard));
     document.getElementById("wizardCost").innerHTML = nextWizardCost;
 }
 
+//See hireWizard() (above).
 function hireAcolyte(){
     if(money >= acolyteCost){
         money -= acolyteCost;
@@ -184,7 +187,11 @@ function hireAcolyte(){
     }
 }
 
+//Runs every second
 window.setInterval(function(){
+    //Adds fire per second based on passive gen.
+    //This can be simplified - on To Do list.
     fire += wizardGain * wizard;
+    fire += acolyteGain * acolyte;
     document.getElementById("fireAspectNum").innerHTML = fire;
 }, 1000);
