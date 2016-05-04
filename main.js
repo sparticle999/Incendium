@@ -95,8 +95,14 @@ function decisionUpgrade(){
         if(decisionLevel === 3){
             alert("These wizards are so slow! Why don't we hire our own acolytes!");
             decisionCost = 100000;
-            document.getElementById("hireAcolyte").className = "blueBackground";
-            document.getElementById("acolyteNumBox").className = "blueBackground";
+            if(colour === "true"){
+                document.getElementById("hireAcolyte").className = "blueBackground";
+                document.getElementById("acolyteNumBox").className = "blueBackground";
+            }
+            if(colour === "false"){
+                document.getElementById("hireAcolyte").className = "";
+                document.getElementById("acolyteNumBox").className = "";
+            }
         }
         decisionLevel += 1;
         refreshMoney();
