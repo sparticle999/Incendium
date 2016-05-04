@@ -156,8 +156,8 @@ function addColour(){
     document.getElementById("upgradeButtonAPI2").className = "yellowBackground";
     document.getElementById("hireWizard").className = "blueBackground";
     document.getElementById("wizardNumBox").className = "blueColour";
-    //document.getElementById("").className = ;
-    //document.getElementById("").className = ;
+    document.getElementById("hireAcolyte").className = "blueBackground";
+    document.getElementById("acolyteNumBox").className = "blueBackground";
     //document.getElementById("").className = ;
     //document.getElementById("").className = ;
     //document.getElementById("").className = ;
