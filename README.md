@@ -20,7 +20,8 @@ Thanks for playing
 
 - Implement Water Vs Fire
 - Improve Graphics Options
-- ~~Passive Generation Of Fire~~
+- Add More To Passive Generation Of Fire
+- Simplify gaining passive fire
 - Mana System
 - Mana Pool Cap i.e. 50/50
 - Training Soldiers
