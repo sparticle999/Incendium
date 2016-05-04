@@ -12,6 +12,7 @@ var bootstrap = "false";
 var wizard = 0;
 var wizardCost = 500;
 var wizardGain = 1;
+var unlockAcolyte = "false";
 var acolyte = 0;
 var acolyteCost = 5000;
 var acolyteGain = 10;
@@ -156,8 +157,10 @@ function addColour(){
     document.getElementById("upgradeButtonAPI2").className = "yellowBackground";
     document.getElementById("hireWizard").className = "blueBackground";
     document.getElementById("wizardNumBox").className = "blueColour";
+    if(unlockAcolyte === "true"){
     document.getElementById("hireAcolyte").className = "blueBackground";
     document.getElementById("acolyteNumBox").className = "blueBackground";
+    }
     //document.getElementById("").className = ;
     //document.getElementById("").className = ;
     //document.getElementById("").className = ;
@@ -185,6 +188,7 @@ function hireAcolyte(){
         money -= acolyteCost;
         acolyte += 1;
         acolyteCost = Math.floor(5000 * Math.pow(1.1,acolyte));
+        unlockAcolyte = "true";
         refreshMoney();
         document.getElementById("acolyteNum").innerHTML = acolyte;
     }
