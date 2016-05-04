@@ -101,8 +101,14 @@ function decisionUpgrade(){
                 document.getElementById("acolyteNumBox").className = "blueBackground";
             }
             if(colour === "false"){
-                document.getElementById("hireAcolyte").className = "";
-                document.getElementById("acolyteNumBox").className = "";
+                if(bootstrap === "false"){
+                    document.getElementById("hireAcolyte").className = "";
+                    document.getElementById("acolyteNumBox").className = "";
+                }
+                if(bootstrap === "true"){
+                    document.getElementById("hireAcolyte").className = "btn-primary bold"
+                    document.getElementById("acolyteNumBox").className = "btn-primary bold";
+                }
             }
         }
         decisionLevel += 1;
@@ -146,6 +152,18 @@ function upgradeButtonAPI(){
     }
 }
 
+//Adds Bootstrap formatting to the buttons.
+function upgradeButtonAPI2(){
+    if(money >= 1000){
+        money -= 1000;
+        bootstrap = "true";
+        colour = "false";
+        addBootstrap();
+        refreshMoney();
+        document.getElementById("upgradeButtonAPI2").className = "hidden";
+    }
+}
+
 //Makes the buttons specific colours.
 function addColour(){
     document.getElementById("getFire").className = "redBackground";
@@ -165,6 +183,10 @@ function addColour(){
     //document.getElementById("").className = ;
     //document.getElementById("").className = ;
     //document.getElementById("").className = ;
+}
+
+function addBootstrap(){
+    
 }
 
 //Deducts cost from money, then adds 1 to wizard count.
