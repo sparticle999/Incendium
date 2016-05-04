@@ -184,7 +184,6 @@ function hireAcolyte(){
     }
     var nextAcolyteCost = Math.floor(5000 * Math.pow(1.1,acolyte));
     document.getElementById("acolyteCost").innerHTML = nextAcolyteCost;
-    }
 }
 
 //Runs every second
