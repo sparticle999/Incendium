@@ -106,8 +106,8 @@ function decisionUpgrade(){
                     document.getElementById("acolyteNumBox").className = "";
                 }
                 if(bootstrap === "true"){
-                    document.getElementById("hireAcolyte").className = "btn-primary bold"
-                    document.getElementById("acolyteNumBox").className = "btn-primary bold";
+                    document.getElementById("hireAcolyte").className = "btn-primary bold round"
+                    document.getElementById("acolyteNumBox").className = "btn-primary bold round";
                 }
             }
         }
