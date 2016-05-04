@@ -12,6 +12,9 @@ var bootstrap = "false";
 var wizard = 0;
 var wizardCost = 500;
 var wizardGain = 1;
+var acolyte = 0;
+var acolyteCost = 5000;
+var acolyteGain = 10;
 
 // When Buy Shop button is pressed at start of the game, this triggers.
 function buyShop() {
@@ -89,6 +92,12 @@ function decisionUpgrade(){
             document.getElementById("hireWizard").className = "";
             document.getElementById("wizardNumBox").className = "";
         }
+        if(decisionLevel === 3){
+            alert("These wizards are so slow! Why don't we hire our own acolytes!");
+            decisionCost = 100000;
+            document.getElementById("hireAcolyte").className = "blueBackground";
+            document.getElementById("acolyteNumBox").className = "blueBackground";
+        }
         decisionLevel += 1;
         refreshMoney();
         document.getElementById("decisionCost").innerHTML = decisionCost;
@@ -160,6 +169,19 @@ function hireWizard(){
     }
     var nextWizardCost = Math.floor(500 * Math.pow(1.1,wizard));
     document.getElementById("wizardCost").innerHTML = nextWizardCost;
+}
+
+function hireAcolyte(){
+    if(money >= acolyteCost){
+        money -= acolyteCost;
+        acolyte += 1;
+        acolyteCost = Math.floor(5000 * Math.pow(1.1,acolyte));
+        refreshMoney();
+        document.getElementById("acolyteNum").innerHTML = acolyte;
+    }
+    var nextAcolyteCost = Math.floor(5000 * Math.pow(1.1,acolyte));
+    document.getElementById("acolyteCost").innerHTML = nextAcolyteCost;
+    }
 }
 
 window.setInterval(function(){
