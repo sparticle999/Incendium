@@ -115,8 +115,8 @@ function decisionUpgrade(){
             }
             if(colour === "false"){
                 if(bootstrap === "true"){
-                    document.getElementById("hireMage").className = "btn-primary bold round";
-                    document.getElementById("mageNumBox").className = "btn-primary bold round";
+                    document.getElementById("hireMage").className = "label label-info bold round";
+                    document.getElementById("mageNumBox").className = "label label-info bold round";
                 }
                 if(bootstrap === "false"){
                     document.getElementById("hireMage").className = "";
@@ -266,7 +266,7 @@ function hireMage(){
     if(money >= mageCost){
         money -= mageCost;
         mage += 1;
-        mageCost = Math.floor(5000 * Math.pow(1.1,acolyte));
+        mageCost = Math.floor(5000 * Math.pow(1.1,mage));
         refreshMoney();
         calculateFps();
         document.getElementById("mageNum").innerHTML = mage;
