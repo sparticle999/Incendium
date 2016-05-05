@@ -218,8 +218,9 @@ function addColour(){
 
 function addBootstrap(){
     document.getElementById("getFire").className = "btn-danger bold round";
+    document.getElementById("fireAspect").className = "btn-danger-outline bold round";
     document.getElementById("sellFire").className = "btn-danger bold round";
-    document.getElementById("money").className = "btn-success bold round";
+    document.getElementById("money").className = "btn-success-outline bold round";
     document.getElementById("decisionUpgrade").className = "btn-info bold round";
     document.getElementById("upgradeFirePrice").className = "btn-info bold round";
     document.getElementById("upgradeFirePerClick").className = "btn-info bold round";
