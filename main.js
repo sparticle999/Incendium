@@ -237,6 +237,7 @@ function hireWizard(){
         //Calculates Cost based on power system
         wizardCost = Math.floor(500 * Math.pow(1.1,wizard));
         refreshMoney();
+        calculateFps();
         document.getElementById("wizardNum").innerHTML = wizard;
     }
     //Calculates next cost to display on the screen.
@@ -251,6 +252,7 @@ function hireAcolyte(){
         acolyte += 1;
         acolyteCost = Math.floor(5000 * Math.pow(1.1,acolyte));
         refreshMoney();
+        calculateFps();
         document.getElementById("acolyteNum").innerHTML = acolyte;
     }
     var nextAcolyteCost = Math.floor(5000 * Math.pow(1.1,acolyte));
@@ -263,6 +265,7 @@ function hireMage(){
         mage += 1;
         mageCost = Math.floor(5000 * Math.pow(1.1,acolyte));
         refreshMoney();
+        calculateFps();
         document.getElementById("MageNum").innerHTML = mage;
     }
     var nextMageCost = Math.floor(5000 * Math.pow(1.1,mage));
