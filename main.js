@@ -203,6 +203,7 @@ function addBootstrap(){
 function calculateFps(){
     fps += wizardGain * wizard;
     fps += acolyteGain * acolyte;
+    fps += mageGain * mage;
 }
 
 //Deducts cost from money, then adds 1 to wizard count.
@@ -242,7 +243,7 @@ function hireMage(){
         document.getElementById("MageNum").innerHTML = mage;
     }
     var nextMageCost = Math.floor(5000 * Math.pow(1.1,mage));
-    document.getElementById("acolyteCost").innerHTML = nextMageCost;
+    document.getElementById("mageCost").innerHTML = nextMageCost;
 }
 
 //Runs every second
@@ -250,7 +251,6 @@ window.setInterval(function(){
     //Adds fire per second based on passive gen.
     //This can be simplified - on To Do list.
     //fire += fps;
-    fire += wizardGain * wizard;
-    fire += acolyteGain * acolyte;
+    fire += fps;
     document.getElementById("fireAspectNum").innerHTML = fire;
 }, 1000);
