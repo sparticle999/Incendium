@@ -96,6 +96,7 @@ function decisionUpgrade(){
         if(decisionLevel === 3){
             alert("These wizards are so slow! Why don't we hire our own acolytes!");
             decisionCost = 100000;
+            unlockAcolyte = "true";
             if(colour === "true"){
                 document.getElementById("hireAcolyte").className = "blueBackground";
                 document.getElementById("acolyteNumBox").className = "blueBackground";
@@ -188,6 +189,10 @@ function addColour(){
 function addBootstrap(){
     document.getElementById("hireWizard").className = "btn-primary bold round";
     document.getElementById("wizardNumBox").className = "btn-primary bold round";
+    if(upgradeAcolyte === "true"){
+        document.getElementById("hireAcolyte").className = "btn-primary bold round"
+        document.getElementById("acolyteNumBox").className = "btn-primary bold round";
+    }
 }
 
 //Deducts cost from money, then adds 1 to wizard count.
@@ -211,7 +216,6 @@ function hireAcolyte(){
         money -= acolyteCost;
         acolyte += 1;
         acolyteCost = Math.floor(5000 * Math.pow(1.1,acolyte));
-        unlockAcolyte = "true";
         refreshMoney();
         document.getElementById("acolyteNum").innerHTML = acolyte;
     }
