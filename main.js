@@ -205,21 +205,21 @@ function addColour(){
 
 function addBootstrap(){
     document.getElementById("getFire").className = "btn-danger bold round";
-    document.getElementById("fireAspect").className = "btn-danger-outline bold round";
+    document.getElementById("fireAspect").className = "label label-warning bold round";
     document.getElementById("sellFire").className = "btn-danger bold round";
-    document.getElementById("money").className = "btn-success-outline bold round";
-    document.getElementById("decisionUpgrade").className = "btn-info bold round";
-    document.getElementById("upgradeFirePrice").className = "btn-info bold round";
-    document.getElementById("upgradeFirePerClick").className = "btn-info bold round";
+    document.getElementById("money").className = "label label-success bold round";
+    document.getElementById("decisionUpgrade").className = "btn-primary bold round";
+    document.getElementById("upgradeFirePrice").className = "btn-primary bold round";
+    document.getElementById("upgradeFirePerClick").className = "btn-primary bold round";
     document.getElementById("hireWizard").className = "btn-primary bold round";
-    document.getElementById("wizardNumBox").className = "btn-primary bold round";
+    document.getElementById("wizardNumBox").className = "label label-info bold round";
     if(unlockAcolyte === "true"){
         document.getElementById("hireAcolyte").className = "btn-primary bold round"
-        document.getElementById("acolyteNumBox").className = "btn-primary bold round";
+        document.getElementById("acolyteNumBox").className = "label label-info bold round";
     }
     if(unlockMage === "true"){
         document.getElementById("hireMage").className = "btn-primary bold round";
-        document.getElementById("mageNumBox").className = "btn-primary bold round";
+        document.getElementById("mageNumBox").className = "label label-info bold round";
     }
 }
 
