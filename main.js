@@ -185,6 +185,7 @@ function upgradeButtonAPI2(){
 //Makes the buttons specific colours.
 function addColour(){
     document.getElementById("getFire").className = "redBackground";
+    document.getElementById("fireAspect").className = "orangeColour"
     document.getElementById("sellFire").className = "redBackground";
     document.getElementById("money").className = "greenColour";
     document.getElementById("decisionUpgrade").className = "blueBackground";
