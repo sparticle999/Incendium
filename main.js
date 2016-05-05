@@ -186,7 +186,8 @@ function addColour(){
 }
 
 function addBootstrap(){
-    
+    document.getElementById("hireWizard").className = "btn-primary bold round";
+    document.getElementById("wizardNumBox").className = "btn-primary bold round";
 }
 
 //Deducts cost from money, then adds 1 to wizard count.
