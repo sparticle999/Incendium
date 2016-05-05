@@ -269,7 +269,7 @@ function hireMage(){
         mageCost = Math.floor(5000 * Math.pow(1.1,acolyte));
         refreshMoney();
         calculateFps();
-        document.getElementById("MageNum").innerHTML = mage;
+        document.getElementById("mageNum").innerHTML = mage;
     }
     var nextMageCost = Math.floor(5000 * Math.pow(1.1,mage));
     document.getElementById("mageCost").innerHTML = nextMageCost;
