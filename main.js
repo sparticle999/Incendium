@@ -1,26 +1,13 @@
 //Creates Variable List For Future Use.
 var money = 0;
-var fire = 0;
-var firePrice = 0.5;
-var decisionLevel = 0;
-var decisionCost = 10;
-var upgradeFirePriceCost = 20;
-var firePerClick = 1;
-var upgradeFirePerClickCost = 100;
-var colour = "false";
-var bootstrap = "false";
+var fire = 0; var firePrice = 0.5;
+var decisionLevel = 0; var decisionCost = 10;
+var upgradeFirePriceCost = 20; var firePerClick = 1; var upgradeFirePerClickCost = 100;
+var colour = "false"; var bootstrap = "false";
 var fps = 0;
-var wizard = 0;
-var wizardCost = 500;
-var wizardGain = 1;
-var unlockAcolyte = "false";
-var acolyte = 0;
-var acolyteCost = 5000;
-var acolyteGain = 10;
-var unlockMage = "false";
-var mage = 0;
-var mageCost = 50000;
-var mageGain = 100;
+var wizard = 0; var wizardCost = 500; var wizardGain = 1;
+var unlockAcolyte = "false"; var acolyte = 0; var acolyteCost = 5000; var acolyteGain = 10;
+var unlockMage = "false"; var mage = 0; var mageCost = 50000; var mageGain = 100;
 
 // When Buy Shop button is pressed at start of the game, this triggers.
 function buyShop() {
