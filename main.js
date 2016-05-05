@@ -195,11 +195,13 @@ function addColour(){
     document.getElementById("hireWizard").className = "blueBackground";
     document.getElementById("wizardNumBox").className = "blueBackground";
     if(unlockAcolyte === "true"){
-    document.getElementById("hireAcolyte").className = "blueBackground";
-    document.getElementById("acolyteNumBox").className = "blueBackground";
+        document.getElementById("hireAcolyte").className = "blueBackground";
+        document.getElementById("acolyteNumBox").className = "blueBackground";
     }
-    //document.getElementById("").className = ;
-    //document.getElementById("").className = ;
+    if(unlockMage === "true"){
+        document.getElementById("hireMage").className = "blueBackground";
+        document.getElementById("mageNumBox").className = "blueBackground";
+    }
     //document.getElementById("").className = ;
     //document.getElementById("").className = ;
 }
