@@ -2,7 +2,7 @@
 
 Developed and Coded by Sparticle999
 
-[Game link](http://sparticle999.github.io/Minergy2/)
+[Game link](http://sparticle999.github.io/Incendium/)
 
 [Reddit Page]() (To Be Added)
 
