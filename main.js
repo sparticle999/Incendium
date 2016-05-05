@@ -17,6 +17,10 @@ var unlockAcolyte = "false";
 var acolyte = 0;
 var acolyteCost = 5000;
 var acolyteGain = 10;
+var unlockMage = "false";
+var mage = 0;
+var mageCost = 50000;
+var mageGain = 100;
 
 // When Buy Shop button is pressed at start of the game, this triggers.
 function buyShop() {
@@ -227,6 +231,18 @@ function hireAcolyte(){
     }
     var nextAcolyteCost = Math.floor(5000 * Math.pow(1.1,acolyte));
     document.getElementById("acolyteCost").innerHTML = nextAcolyteCost;
+}
+
+function hireMage(){
+    if(money >= mageCost){
+        money -= mageCost;
+        mage += 1;
+        mageCost = Math.floor(5000 * Math.pow(1.1,acolyte));
+        refreshMoney();
+        document.getElementById("MageNum").innerHTML = mage;
+    }
+    var nextMageCost = Math.floor(5000 * Math.pow(1.1,mage));
+    document.getElementById("acolyteCost").innerHTML = nextMageCost;
 }
 
 //Runs every second
