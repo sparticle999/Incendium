@@ -189,7 +189,7 @@ function addColour(){
 function addBootstrap(){
     document.getElementById("hireWizard").className = "btn-primary bold round";
     document.getElementById("wizardNumBox").className = "btn-primary bold round";
-    if(upgradeAcolyte === "true"){
+    if(unlockAcolyte === "true"){
         document.getElementById("hireAcolyte").className = "btn-primary bold round"
         document.getElementById("acolyteNumBox").className = "btn-primary bold round";
     }
