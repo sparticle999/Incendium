@@ -117,6 +117,31 @@ function decisionUpgrade(){
                 }
             }
         }
+        if(decisionLevel === 4){
+            alert("I think I can trust leaving passive generation to your own hands, why don't we do something new?");
+            decisionCost = 1000000;
+            //Unlocks Mages
+            unlockMage = "true";
+            if(colour === "true"){
+                document.getElementById("hireMage").className = "";
+                document.getElementById("mageNumBox").className = "";
+            }
+            if(colour === "false"){
+                if(bootstrap === "true"){
+                    document.getElementById("hireMage").className = "btn-primary bold round";
+                    document.getElementById("mageNumBox").className = "btn-primary bold round";
+                }
+                if(bootstrap === "false"){
+                    document.getElementById("hireMage").className = "";
+                    document.getElementById("mageNumBox").className = "";
+                }
+            }
+            //Unlocks Mana
+            
+            
+            
+            
+        }
         decisionLevel += 1;
         refreshMoney();
         document.getElementById("decisionCost").innerHTML = decisionCost;
@@ -192,11 +217,21 @@ function addColour(){
 }
 
 function addBootstrap(){
+    document.getElementById("getFire").className = "btn-danger bold round";
+    document.getElementById("sellFire").className = "btn-danger bold round";
+    document.getElementById("money").className = "btn-success bold round";
+    document.getElementById("decisionUpgrade").className = "btn-info bold round";
+    document.getElementById("upgradeFirePrice").className = "btn-info bold round";
+    document.getElementById("upgradeFirePerClick").className = "btn-info bold round";
     document.getElementById("hireWizard").className = "btn-primary bold round";
     document.getElementById("wizardNumBox").className = "btn-primary bold round";
     if(unlockAcolyte === "true"){
         document.getElementById("hireAcolyte").className = "btn-primary bold round"
         document.getElementById("acolyteNumBox").className = "btn-primary bold round";
+    }
+    if(unlockMage === "true"){
+        document.getElementById("hireMage").className = "btn-primary bold round";
+        document.getElementById("mageNumBox").className = "btn-primary bold round";
     }
 }
 
