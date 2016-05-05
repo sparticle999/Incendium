@@ -227,7 +227,7 @@ function addBootstrap(){
 }
 
 function calculateFps(){
-    fps += wizardGain * wizard;
+    fps = wizardGain * wizard;
     fps += acolyteGain * acolyte;
     fps += mageGain * mage;
 }
