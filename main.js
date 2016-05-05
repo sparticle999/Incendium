@@ -9,7 +9,6 @@ var firePerClick = 1;
 var upgradeFirePerClickCost = 100;
 var colour = "false";
 var bootstrap = "false";
-var fps = 0;
 var wizard = 0;
 var wizardCost = 500;
 var wizardGain = 1;
@@ -196,11 +195,6 @@ function addBootstrap(){
     }
 }
 
-function calculateFps(){
-    fps += wizardGain * wizard;
-    fps += acolyteGain * acolyte;
-}
-
 //Deducts cost from money, then adds 1 to wizard count.
 function hireWizard(){
     if(money >= wizardCost){
@@ -228,12 +222,22 @@ function hireAcolyte(){
     var nextAcolyteCost = Math.floor(5000 * Math.pow(1.1,acolyte));
     document.getElementById("acolyteCost").innerHTML = nextAcolyteCost;
 }
+function hireMage(){
+    if(money >= mageCost){
+        money -= mageCost;
+        mage += 1;
+        mageCost = Math.floor(5000 * Math.pow(1.1,acolyte));
+        refreshMoney();
+        document.getElementById("MageNum").innerHTML = mage;
+    }
+    var nextMageCost = Math.floor(5000 * Math.pow(1.1,mage));
+    document.getElementById("acolyteCost").innerHTML = nextMageCost;
+}
 
 //Runs every second
 window.setInterval(function(){
     //Adds fire per second based on passive gen.
     //This can be simplified - on To Do list.
-    //fire += fps;
     fire += wizardGain * wizard;
     fire += acolyteGain * acolyte;
     document.getElementById("fireAspectNum").innerHTML = fire;
