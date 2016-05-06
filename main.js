@@ -100,7 +100,7 @@ function decisionUpgrade(){
                 }
                 if(bootstrap === "true"){
                     document.getElementById("hireAcolyte").className = "btn-primary bold round"
-                    document.getElementById("acolyteNumBox").className = "btn-primary bold round";
+                    document.getElementById("acolyteNumBox").className = "label label-info bold round";
                 }
             }
         }
@@ -115,7 +115,7 @@ function decisionUpgrade(){
             }
             if(colour === "false"){
                 if(bootstrap === "true"){
-                    document.getElementById("hireMage").className = "label label-info bold round";
+                    document.getElementById("hireMage").className = "btn-primary bold round";
                     document.getElementById("mageNumBox").className = "label label-info bold round";
                 }
                 if(bootstrap === "false"){
