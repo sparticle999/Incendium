@@ -26,6 +26,7 @@ Thanks for playing
 - Mana Pool Cap i.e. 50/50
 - Training Soldiers
 - Random Events
+- Premium Currency
 
 # Contributors
 - Loganator4625 (Gameplay Ideas)
