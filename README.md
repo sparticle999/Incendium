@@ -27,7 +27,7 @@ Thanks for playing
 - Training Soldiers
 - Random Events
 - Premium Currency
-- *BALANCE GAME*
+- **BALANCE GAME**
 
 # Contributors
 - Loganator4625 (Gameplay Ideas)
