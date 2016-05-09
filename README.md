@@ -27,6 +27,7 @@ Thanks for playing
 - Training Soldiers
 - Random Events
 - Premium Currency
+- Research
 - **BALANCE GAME**
 
 # Contributors
