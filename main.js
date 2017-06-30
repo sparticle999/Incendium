@@ -1,14 +1,5 @@
 //Creates Variable List For Future Use.
-var money = 0;
-var fire = 0;
-var firePrice = 0.5;
-var decisionLevel = 0;
-var decisionCost = 10;
-var upgradeFirePriceCost = 20;
-var firePerClick = 1;
-var upgradeFirePerClickCost = 100;
-var colour = "false";
-var bootstrap = "false";
+var money=0,fire=0,firePrice=0.5,decisionLevel=0,decisionCost=10,upgradeFirePriceCost=20,firePerClick=1,upgradeFirePerClickCost=100,colour="false",bootstrap="false";
 
 // When Buy Shop button is pressed at start of the game, this triggers.
 function buyShop() {
